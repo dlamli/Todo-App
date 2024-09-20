@@ -5,7 +5,7 @@ export type ButtonProps = {
     buttonType?: ButtonType;
     children?: React.ReactNode;
     handleDeleteTodo?: (id: number | undefined) => void;
-    onClick: () => Promise<void>;
+    onClick?: () => Promise<void>;
 };
 
 export type Todo = {
